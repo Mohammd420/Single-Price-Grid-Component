@@ -1,0 +1,109 @@
+:root {
+    --Teal-500: hsl(179, 62%, 43%);
+    --Green-400: hsl(71, 73%, 54%);
+    --Teal-100: hsl(204, 43%, 93%);
+    --Gray-500: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--Teal-100);
+    min-height: 600px;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    place-items: center;
+}
+@media (max-width:650px) {
+    body{
+        padding: 20px;
+    }
+}
+main {
+    background-color: #fff;
+    width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.255);
+    border-radius: 8px;
+}
+
+main .container .text {
+    font-size: 16px;
+    padding: 20px;
+}
+
+main .container .text h1 {
+    color: var(--Teal-500);
+}
+
+@media (max-width:650px) {
+    main .container .text h1 {
+        font-size: 21px;
+        margin:0;
+    }
+}
+
+main .container .text .green {
+    color: var(--Green-400);
+}
+
+main .container .text .gray {
+    color: var(--Gray-500);
+}
+
+main .container .prices {
+    display: flex;
+}
+
+@media (max-width:650px) {
+    main .container .prices {
+        flex-direction: column;
+    }
+
+    main {
+        width: 300px;
+    }
+}
+
+main .container .prices .left {
+    background-color: var(--Teal-500);
+    color: white;
+    padding: 20px;
+    flex-basis: 50%;
+}
+
+main .container .prices .left .month-price {
+    font-size: 34px;
+
+}
+
+main .container .prices .left .pre-month {
+    color: hsl(204deg 43% 93% / 62%);
+    display: inline-block;
+    margin: 0;
+}
+
+main .container .left .access {
+    font-size: 16px;
+    color: var(--Teal-100)
+}
+
+main .container .prices .left button {
+    border: none;
+    background-color: var(--Green-400);
+    color: var(--Teal-100);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+main .container .prices .right {
+    background-color: hsl(179deg 62% 43% / 82%);
+    color: white;
+    padding: 20px;
+    flex-basis: 50%;
+}
