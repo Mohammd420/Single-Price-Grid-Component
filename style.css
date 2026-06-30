@@ -64,10 +64,6 @@ main .container .prices {
     main .container .prices {
         flex-direction: column;
     }
-
-    main {
-        width: 300px;
-    }
 }
 
 main .container .prices .left {
